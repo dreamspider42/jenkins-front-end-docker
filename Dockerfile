@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y \
                               google-chrome-stable \
 			      xvfb \
 			      build-essential && apt-get clean
-RUN npm install -g n && n stable
-RUN npm install -g npm gulp bower && gem install compass
+RUN npm install -g n && n stable && npm update -g npm
+RUN npm install -g gulp bower && gem install compass
 USER jenkins
