@@ -15,8 +15,7 @@ RUN apt-get update && apt-get install -y \
                               ruby-sass \
                               google-chrome-stable \
 			      xvfb \
-			      build-essential
-    && apt-get clean
+			      build-essential && apt-get clean
 RUN npm install -g n && n stable
 RUN npm install -g npm gulp bower && gem install compass
 USER jenkins
