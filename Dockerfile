@@ -20,4 +20,3 @@ RUN apt-get update && apt-get install -y \
 RUN npm install -g n && n stable
 RUN npm install -g npm gulp bower && gem install compass
 USER jenkins
-
